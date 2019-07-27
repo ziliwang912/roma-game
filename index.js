@@ -3,19 +3,19 @@ const choices = ["Lapis", "Papyrus", "Scalpellus"];
 let userChoice;
 let computereChoice;
 
-document.querySelector('#click_Lapis').onclick = function() {
+document.querySelector('#click_Lapis').onclick = function () {
     userChoice = choices[0];
     computereChoice = computerChooses();
     compareChoices(userChoice, computereChoice);
 };
 
-document.querySelector('#click_Papyrus').onclick = function() {
+document.querySelector('#click_Papyrus').onclick = function () {
     userChoice = choices[1];
     computereChoice = computerChooses();
     compareChoices(userChoice, computereChoice);
 };
 
-document.querySelector('#click_Scalpellus').onclick = function() {
+document.querySelector('#click_Scalpellus').onclick = function () {
     userChoice = choices[2];
     computereChoice = computerChooses();
     compareChoices(userChoice, computereChoice);
