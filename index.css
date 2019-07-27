@@ -27,3 +27,7 @@ body {
     color: red;
     font-size: 25px;
 }
+
+#history_result {
+    color: green;
+}

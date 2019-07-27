@@ -3,28 +3,33 @@ const choices = ["Lapis", "Papyrus", "Scalpellus"];
 let userChoice;
 let computereChoice;
 
+// if Lapis is chosen
 document.querySelector('#click_Lapis').onclick = function () {
     userChoice = choices[0];
     computereChoice = computerChooses();
     compareChoices(userChoice, computereChoice);
 };
 
+// if Papyrus is chosen
 document.querySelector('#click_Papyrus').onclick = function () {
     userChoice = choices[1];
     computereChoice = computerChooses();
     compareChoices(userChoice, computereChoice);
 };
 
+// if Scalpellus is chosen
 document.querySelector('#click_Scalpellus').onclick = function () {
     userChoice = choices[2];
     computereChoice = computerChooses();
     compareChoices(userChoice, computereChoice);
 };
 
+// returns a random integer from 0 to 2 for computer
 function computerChooses() {
-    return choices[Math.floor(Math.random() * 3)]; // returns a random integer from 0 to 2
+    return choices[Math.floor(Math.random() * 3)]; 
 };
 
+// compare two choices and show the result
 function compareChoices(choice1, choice2) {
     if (choice1 === "Lapis") {
         if (choice2 === "Lapis") {
@@ -52,4 +57,3 @@ function compareChoices(choice1, choice2) {
         }
     }
 };
-
