@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+#game_pic {
+    width: 75%;
+    max-width: 500px;
+    margin: 10x;
+}
+
+#choice_text {
+    font-size: 15px;
+}
+
+.buttons {
+    font-size: 20px;
+    border-radius: 1px;
+    width: 110px;
+    margin: 10px;
+}
+
+.buttons:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#result {
+    color: red;
+    font-size: 25px;
+}
