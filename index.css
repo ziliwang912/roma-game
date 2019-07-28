@@ -28,6 +28,11 @@ body {
     font-size: 25px;
 }
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #history_result {
     color: green;
 }
