@@ -2,6 +2,11 @@ body {
     text-align: center;
 }
 
+.column {
+    float: left;
+    width: 50%;
+}
+
 #game_pic {
     width: 75%;
     max-width: 500px;
