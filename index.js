@@ -1,6 +1,6 @@
-// Lapis, Papyrus, Scalpellus
 const choices = ["Lapis", "Papyrus", "Scalpellus"];
 const winners = ["Tie", "You", "Computer"];
+
 let userChoice;
 let computereChoice;
 let numOfGames = 0;
@@ -44,33 +44,33 @@ function compareChoices(choice1, choice2) {
             alert("You chose: Lapis. Computer chose: Papyrus.\nComputer wins!");
             addResult(++numOfGames, choice1, choice2, winners[2]);
         } else {
-            alert("You chose: Lapis. Computer chose: Scalpellus. \nYou win!");
+            alert("You chose: Lapis. Computer chose: Scalpellus.\nYou win!");
             numOfWins++;
             addResult(++numOfGames, choice1, choice2, winners[1]);
         }
     } else if (choice1 === "Papyrus") {
         if (choice2 === "Lapis") {
-            alert("Papyrus Vs. Lapis! You win!");
+            alert("You chose: Papyrus. Computer chose: Lapis.\nYou win!");
             addResult(++numOfGames, choice1, choice2, winners[1]);
             numOfWins++;
         } else if (choice2 === "Papyrus") {
-            alert("Papyrus Vs. Papyrus! It's a tie!");
+            alert("You chose: Papyrus. Computer chose: Papyrus.\nIt's a tie!");
             numOfTies++;
             addResult(++numOfGames, choice1, choice2, winners[0]);
         } else {
-            alert("Papyrus Vs. Scalpellus! Computer wins!");
+            alert("You chose: Papyrus. Computer chose: Scalpellus.\nComputer wins!");
             addResult(++numOfGames, choice1, choice2, winners[2]);
         }
     } else {
         if (choice2 === "Lapis") {
-            alert("Scalpellus Vs. Lapis! Computer wins!");
+            alert("You chose: Scalpellus. Computer chose: Lapis.\nComputer wins!");
             addResult(++numOfGames, choice1, choice2, winners[2]);
         } else if (choice2 === "Papyrus") {
-            alert("Scalpellus Vs. Papyrus! You win!");
+            alert("You chose: Scalpellus. Computer chose: Papyrus.\nYou win!");
             numOfWins++;
             addResult(++numOfGames, choice1, choice2, winners[1]);
         } else {
-            alert("Scalpellus Vs. Scalpellus! It's a tie!");
+            alert("You chose: Scalpellus. Computer chose: Scalpellus.\nIt's a tie!");
             numOfTies++;
             addResult(++numOfGames, choice1, choice2, winners[0]);
         }
