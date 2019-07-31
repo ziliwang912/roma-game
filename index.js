@@ -37,14 +37,14 @@ function computerChooses() {
 function compareChoices(choice1, choice2) {
     if (choice1 === "Lapis") {
         if (choice2 === "Lapis") {
-            alert("Lapis Vs. Lapis! It's a tie!");
+            alert("You chose: Lapis. Computer chose: Lapis.\nIt's a tie!");
             numOfTies++;
             addResult(++numOfGames, choice1, choice2, winners[0]);
         } else if (choice2 === "Papyrus") {
-            alert("Lapis Vs. Papyrus! Computer wins!");
+            alert("You chose: Lapis. Computer chose: Papyrus.\nComputer wins!");
             addResult(++numOfGames, choice1, choice2, winners[2]);
         } else {
-            alert("Lapis Vs. Scalpellus! You win!");
+            alert("You chose: Lapis. Computer chose: Scalpellus. \nYou win!");
             numOfWins++;
             addResult(++numOfGames, choice1, choice2, winners[1]);
         }
@@ -96,6 +96,6 @@ document.querySelector('#win_rate').onclick = function () {
         alert("You haven't play any game yet!");
     } else {
         let winRate = numOfWins / (numOfGames - numOfTies) * 100;
-        alert("Ignoring ties, Your win rate against computer is " + winRate.toFixed(2) + "%.");
+        alert("Ignoring ties, your win rate against computer is " + winRate.toFixed(2) + "%.");
     }
 };
